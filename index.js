@@ -12,6 +12,10 @@ application.get('/test', function (req, res) {
   res.send('Hello World');
 });
 
+application.get('/', function (req, res) {
+  res.send('Hello World');
+});
+
 application.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
